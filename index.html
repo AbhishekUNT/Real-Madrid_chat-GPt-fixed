@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Real Madrid FC</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #00529c;
+            color: #fff;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #001f3f;
+            padding: 20px;
+            text-align: center;
+        }
+        header h1 {
+            margin: 0;
+        }
+        nav {
+            background-color: #003366;
+            padding: 10px 20px;
+        }
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+        nav ul li {
+            display: inline;
+            margin-right: 20px;
+        }
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            font-size: 18px;
+        }
+        .content {
+            padding: 20px;
+            text-align: center;
+        }
+        footer {
+            background-color: #001f3f;
+            color: #fff;
+            text-align: center;
+            padding: 10px 0;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+        .social-icons {
+            margin-top: 20px;
+        }
+        .social-icons a {
+            color: #fff;
+            text-decoration: none;
+            font-size: 24px;
+            margin: 0 10px;
+        }
+        .theme-switch {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+        }
+        .search-bar {
+            margin-top: 20px;
+        }
+        .reminder-button {
+            margin-top: 20px;
+        }
+        .shopping-cart {
+            position: absolute;
+            top: 20px;
+            left: 20px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Real Madrid FC</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">News</a></li>
+            <li><a href="#">Highlights</a></li>
+            <li><a href="#">Shop</a></li>
+            <li><a href="#">Matches</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </nav>
+    <div class="theme-switch">
+        <button onclick="changeTheme()">Switch Theme</button>
+    </div>
+    <div class="shopping-cart">
+        <img src="shopping-cart-icon.png" alt="Shopping Cart">
+    </div>
+    <div class="content">
+        <div class="search-bar">
+            <label for="search">Search:</label>
+            <input type="text" id="search" name="search" placeholder="Search...">
+            <button>Search</button>
+        </div>
+        <div class="reminder-button">
+            <button>Set Reminder for Matches</button>
+        </div>
+        <h2>Latest News</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed quis felis vitae orci consequat scelerisque.</p>
+        <h2>Highlights</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed quis felis vitae orci consequat scelerisque.</p>
+    </div>
+    <footer>
+        <p>&copy; 2024 Real Madrid FC. All rights reserved.</p>
+        <div class="social-icons">
+            <a href="#"><img src="facebook-icon.png" alt="Facebook"></a>
+            <a href="#"><img src="twitter-icon.png" alt="Twitter"></a>
+            <a href="#"><img src="instagram-icon.png" alt="Instagram"></a>
+        </div>
+    </footer>
+
+    <script>
+        function changeTheme() {
+            document.body.classList.toggle('dark-theme');
+        }
+    </script>
+</body>
+</html>
